@@ -20,10 +20,12 @@
     "target": "ES2022",
     "module": "ES2022",
     "lib": ["ES2022", "dom"],
+    /*
     "baseUrl": "src",
     "paths": {
       "@images/*": ["../public/images/*"] 
     }
+    */
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
