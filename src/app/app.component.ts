@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent} from './footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent} from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,12 +11,5 @@ import { FooterComponent} from './footer/footer.component';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  categorias = [
-    'Inicio',
-    'Organización',
-    'Teoría',
-    'Campismo',
-    'Historia',
-    'Biblioteca'
-  ]
+
 }
