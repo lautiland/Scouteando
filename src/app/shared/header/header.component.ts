@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 import { NgForOf } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 interface Categorias {
   [key: string]: string; 
@@ -8,12 +9,13 @@ interface Categorias {
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [NgForOf],
+  imports: [NgForOf, RouterLink],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  categorias: Categorias = {
+  
+  public categorias: Categorias = {
     organizacion: 'Organización',
     espiritu: 'Espíritu',
     historia: 'Historia',

@@ -5,7 +5,7 @@
       <h1 id="titulo">Scouteando</h1>
     </a>
     <input type="checkbox" id="menu_hamb">
-    <label for="manu_hamb" class="label_menu">
+    <label for="menu_hamb" class="label_menu">
       <span id="span1"></span>
       <span id="span2"></span>
       <span id="span3"></span>
@@ -14,14 +14,14 @@
     <div class="menu_des">
       <ul>
         <li *ngFor="let key of categoriasKeys">
-          <a href="" class="enlaces">{{ categorias[key] }}</a>
+          <a [routerLink]="['/' + key]" class="enlaces">{{ categorias[key] }}</a>
         </li>
       </ul>
     </div>
     <div class="top2">
       <ul class="menu">
         <li *ngFor="let key of categoriasKeys">
-          <a href="" class="enlaces">{{ categorias[key] }}</a>
+          <a [routerLink]="['/' + key]" class="enlaces">{{ categorias[key] }}</a>
         </li>
       </ul>
     </div>
